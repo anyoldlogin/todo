@@ -1,0 +1,4 @@
+Basic todo app using node.js. Written in coffeescript.
+Using Express for the mvc.
+Using ejs for to embed javascript in to templates.
+
