@@ -2,10 +2,32 @@
 <html>
   <head>
     <title>Todos</title>
+    <%- js('/js/jquery-1.7.2.min.js') %>
+    <%- js('/js/underscore-min.js') %> 
+    <%- js('/application') %>
+
+    <%- css('/css/bootstrap.min') %>
+    <%- css('/application') %>
   </head>
 <body>
-  <h1>Hello, World!</h1>
-  <h2>The date/time is: <%= new Date() %></h2>
+<div class="container">
+  <h1>Todo List</h1>
+  <ul id='todos' class='unstyled'>
+    <li id='new_todo'>
+      <div class="clearfix">
+        <div class="input">
+          <div class="input-prepend">
+            <span class='add-on'>New Todo</span>
+            <input class="xlarge todo_title" size="50" type="text" placeholder="Enter your new Todo here..." />
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
 </body>
 </html>
+
+
 
